@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  font-family: url(../Comfortaa-VariableFont_wght.ttf);
+
+}
+::-webkit-scrollbar{
+  display: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+.btn{
+  background-color: #0E9E2F;
+  width: 180px;
+  height: 50px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+

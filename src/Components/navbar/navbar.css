@@ -1,0 +1,30 @@
+.conteiner{
+color: aliceblue;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap:2rem ;
+    padding-top:27px ;
+}
+.conteiner a{
+    color: white;
+    text-decoration: none;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-left:400px ;
+}
+
+.mail{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.ru{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}

@@ -1,0 +1,56 @@
+.geograpgys{
+    background-image: url(../assets/background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 1100px;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 100px 10px 100px;
+   
+
+}
+
+.right{
+    background:
+    linear-gradient(-135deg, transparent 35px, #0e9e30e8 0) top right;
+    background-repeat: no-repeat;
+    width: 30%;
+    padding-top: 100px;
+    margin-top: 165px;
+    margin-left: 20% ; 
+}
+
+.right div{
+    padding-left:75px ;
+    padding-right: 75px;
+}
+
+.right h4{
+    font-size: 32px ;
+    margin-bottom: 50px;
+}
+
+.right p{
+    font-size: 24px;
+    margin-bottom: 100px;
+}
+
+.left{
+    width: 30%;
+    
+}
+
+.left h4{
+    font-size: 70px ;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+.playr{
+    display: flex;
+}
+
+.playr{}

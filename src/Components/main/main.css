@@ -1,0 +1,48 @@
+.main{
+    width: 100%;
+   
+   
+}
+
+.main h2{
+    
+    margin-left: 32%;
+    margin-top: 100px;
+    font-size: 48px;
+}
+
+.main__lain-first{
+    display: flex;
+    margin-top: 100px;
+    
+}
+
+.main__img img{
+    width: 75%;
+    margin-left: 150px ;
+}
+
+.main__info{
+    width: 400px;
+    margin-left: 300px;
+}
+
+.main__info h3{
+    color: #0E9E2F;
+    margin-bottom: 25px;
+    margin-top: 40px;
+    font-size: 32px;
+}
+
+.main__img-second{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    gap: 85px ;
+    margin-left: 275px;
+    margin-right: 50px;
+}
+
+.main__img-second img{
+    width: 115%;
+    margin-top: 50px;
+}
