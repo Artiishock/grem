@@ -1,0 +1,153 @@
+.connection__container{
+background-image: url('../assets/collbg.png');
+background-size: contain;
+background-position:center center ;
+background-size: cover;
+background-repeat: no-repeat;
+color: #fff;
+margin-top: 50px;
+}
+
+.connection{
+   display: flex;
+   padding-top: 100px;
+   margin-left: 100px;
+}
+
+.connection__left{
+    width: 800px;
+}
+
+.connection__left h4{
+    font-size: 70px ;
+    font-weight: 700;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.text__left p{
+    font-size: 24px;
+}
+.check{
+    display: flex;
+    margin-top: 100px; 
+    width: 250px;
+    margin-right: 100px;
+}
+.check__container{
+    display: flex;
+}
+
+.text__check{
+    padding-left: 20px;
+}
+
+.connection__right{
+    background:
+    linear-gradient(-135deg, transparent 35px, #0e9e30e8 0) top right;
+    background-repeat: no-repeat;
+    width: 35%;
+    height: 95%;
+    padding-top: 80px;
+    margin-left: 10% ; 
+    margin-bottom: 80px; 
+}
+.application{
+    padding-left: 40px;
+}
+
+.connection__right p{
+
+margin: 10px;
+}
+
+.application input{
+width: 550px;
+height: 50px;
+}
+
+.connect{
+    padding-top: 30px;
+    display: flex;
+}
+
+.connect input{
+    height: 50px;
+    width: 233px;
+    padding-left: 20px;
+}
+
+.connect{
+    padding-left: 40px;
+}
+
+.email{
+    padding-left: 40px;
+}
+
+.reason{
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.reason select{
+    width: 560px;
+    height: 60px;
+}
+
+.comments {
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.comments textarea {
+    width: 560px;
+    height: 100px;
+    font-size: 16px;
+    resize: none;
+}
+
+.approval{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    color: aliceblue;
+    font-size: 14px;
+}
+
+   input[type="checkbox"] {
+    visibility: hidden; 
+    position: absolute;
+  } 
+  
+  input[type="checkbox"] + label::before {
+    content: ''; 
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/Vector\ 4.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"]:checked + label::before {
+    background: #0e9e30e8; 
+    border: 1px solid;
+  }  
+
+  .connection__btn{
+    margin-left: 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    padding-top: 33px;
+    padding-left: 45px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+
+ 
+  

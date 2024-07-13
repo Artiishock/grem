@@ -1,14 +1,17 @@
 *{
   margin: 0;
-  font-family: url(../Comfortaa-VariableFont_wght.ttf);
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 600;
+  scroll-behavior: smooth;
 
 }
+
 ::-webkit-scrollbar{
   display: none;
 }
-html{
+/* html{
   scroll-behavior: smooth;
-}
+} */
 .btn{
   background-color: #0E9E2F;
   width: 180px;
@@ -17,6 +20,10 @@ html{
   color: #fff;
   border-radius: 5px;
   font-size: 14px;
+}
+.btn:hover{
+  background-color:#fff ;
+  color: #0E9E2F;
 }
 body {
   margin: 0;
