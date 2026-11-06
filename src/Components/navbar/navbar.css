@@ -1,30 +1,46 @@
-.conteiner{
-color: aliceblue;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    gap:2rem ;
-    padding-top:27px ;
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 24px;
+  color: var(--color-on-dark);
 }
-.conteiner a{
-    color: white;
-    text-decoration: none;
-}
-.contact{
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-left:400px ;
-}
+.navbar a { color: inherit; text-decoration: none; }
+.navbar__menu { display: flex; flex: 1; align-items: center; justify-content: space-between; gap: 24px; }
+.navbar__links { display: flex; flex-wrap: wrap; gap: 8px 24px; margin: 0; padding: 0; list-style: none; font-size: 14px; text-transform: uppercase; }
+.navbar__links a:hover, .navbar__contacts a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.navbar__contacts { display: flex; gap: 20px; font-size: 14px; white-space: nowrap; }
+.navbar__contacts a { display: inline-flex; align-items: center; gap: 8px; }
+.navbar__toggle { display: none; }
 
-.mail{
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-}
-
-.ru{
-    display: flex;
-    justify-content: center;
-    gap: 8px;
+@media (max-width: 1120px) {
+  .navbar__toggle {
+    display: block;
+    min-height: 44px;
+    padding: 8px 18px;
+    background: transparent;
+    color: inherit;
+    border: 1px solid currentcolor;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .navbar__menu {
+    position: absolute;
+    top: 100%;
+    right: var(--gutter);
+    left: var(--gutter);
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    background: var(--color-footer);
+    border-radius: var(--radius);
+  }
+  .navbar__menu--open { display: flex; }
+  .navbar__links { flex-direction: column; }
+  .navbar__links a, .navbar__contacts a { display: inline-flex; align-items: center; min-height: 44px; }
+  .navbar__contacts { flex-direction: column; gap: 0; }
 }

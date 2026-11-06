@@ -1,64 +1,37 @@
-.product__main{
-    background: #686868 ;
-    height: auto;
-    color: white;
-    padding-bottom:200px ;
+.products {
+  position: relative;
+  overflow: hidden;
+  padding-block: var(--section);
+  background: var(--color-product-bg);
+  color: var(--color-on-dark);
 }
-.head{
-    display: grid;
-    grid-template-columns: 5% 90%;
-    gap: 10px;
-
+.products__decor { position: absolute; top: 0; right: 0; width: min(30vw, 360px); pointer-events: none; }
+.products__head { position: relative; display: grid; gap: 20px; max-width: 42rem; margin-bottom: clamp(32px, 5vw, 60px); }
+.products__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--gap);
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
- 
-.product__taytl{
-    width: 33%;
-    margin-left:200px ;
-    margin-bottom:50px ;
-    padding-top: 100px;
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 24px;
+  background: var(--color-product-card);
 }
+.product img { align-self: center; height: 170px; margin-bottom: 8px; object-fit: contain; }
+.product h3 { font-size: 1.25rem; line-height: 1.25; }
+.product p { flex: 1; color: var(--color-on-dark-muted); font-size: 0.9375rem; }
 
-.product__taytl h1 {
-   margin-bottom: 20px;
-    font-size: 40px;
+@media (max-width: 1120px) {
+  .products__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-
-.product{
-
-    display: grid;
-    grid-template-columns: 400px 400px 400px;
-    justify-content: center;
-    gap: 40px;
-}
-
-.product div{
-    
-    background:
-    linear-gradient(-135deg, transparent 35px, #535353 0) top right;
-    background-repeat: no-repeat;
-}
-
-.product div p{
-    color: #d2d2d2;
-
-}
-
-.product div p,h2,button,img{
-    margin-left: 15px;
-   
-}
-
-.product div, p,button{
-   
-    margin-bottom: 30px;
-}
-
-.product img{
-    margin-top: 20px;
-    margin-left: 70px;
-    margin-bottom: 30px;
-}
-
-.wood{
-    transform:translate(1400px, 0); ;
+@media (max-width: 620px) {
+  .products__grid { grid-template-columns: minmax(0, 1fr); }
+  .products__decor { display: none; }
+  .product .btn { width: 100%; }
 }

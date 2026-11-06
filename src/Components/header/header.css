@@ -1,53 +1,19 @@
-.header{
-    height: 100vh;
-    background-image: url('../assets/header.jpg');
-    background-size: contain;
-    background-position:center center ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-   
+.header {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  background: var(--overlay-hero), url('../assets/header.jpg') center / cover no-repeat;
+  color: var(--color-on-dark);
 }
-
-.container__text{
-   
-    font-size: 52px;
-    margin-top: 250px;
-    margin-left: 60px;
+.header__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: clamp(16px, 3vw, 32px);
+  padding-block: 48px clamp(48px, 9vh, 96px);
 }
-
-.container__about{
-    font-size: 24px;
-    color: #d2d2d2;
-    margin-left: 60px;
-    margin-top: 15px;
-}
-
-.container__btn{
-    display: flex;
-    justify-content: center;
-    margin-top: 175px;
-}
-
-/* .btn button{
-    background-color: #0E9E2F;
-    width: 180px;
-    height: 50px;
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 14px;
-} */
-
-.whats__app{
-    margin-left: 1600px;
-    background-color: #0E9E2F;
-    width: 68px;
-    height: 68px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
- 
-}
+.header h1 { font-size: var(--text-hero); font-weight: 700; line-height: 1.1; text-transform: uppercase; }
+.header h1 span { display: block; }
+.header__content p { max-width: 58rem; color: var(--color-on-dark-muted); font-size: var(--text-lead); }

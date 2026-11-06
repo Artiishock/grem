@@ -11,18 +11,19 @@ import Works from './Components/works/Works';
 
 function App() {
   return (
-    <div>
-
-      <Header/>
-      <Products/>
-      <Main/>
-      <Geograpgys/>
-      <Cooperation/>
-      <Works/>
-      <News/>
-      <Connection/>
-      <Footer/>
-    </div>
+    <>
+      <Header />
+      <main>
+        <Products />
+        <Main />
+        <Geograpgys />
+        <Cooperation />
+        <Works />
+        <News />
+        <Connection />
+      </main>
+      <Footer />
+    </>
   );
 }
 

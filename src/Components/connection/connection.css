@@ -1,153 +1,35 @@
-.connection__container{
-background-image: url('../assets/collbg.png');
-background-size: contain;
-background-position:center center ;
-background-size: cover;
-background-repeat: no-repeat;
-color: #fff;
-margin-top: 50px;
+.connection {
+  padding-block: var(--section);
+  background: var(--overlay-dark), url('../assets/collbg.png') center / cover no-repeat;
+  color: var(--color-on-dark);
 }
-
-.connection{
-   display: flex;
-   padding-top: 100px;
-   margin-left: 100px;
+.connection__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 96px); align-items: center; }
+.connection__left { display: grid; gap: 24px; }
+.connection__left > p { font-size: var(--text-lead); }
+.connection__promises { display: grid; gap: 16px; margin: 0; padding: 0; list-style: none; }
+.connection__promises li { display: flex; gap: 12px; align-items: flex-start; }
+.connection__form { display: grid; gap: 20px; padding: clamp(24px, 4vw, 48px); background: var(--color-brand-panel); }
+.field { display: grid; gap: 8px; min-width: 0; }
+.field input, .field select, .field textarea {
+  width: 100%;
+  min-height: 50px;
+  padding: 12px 16px;
+  background: var(--color-on-dark);
+  color: var(--color-ink);
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
+.field textarea { resize: vertical; }
+.field-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.consent { display: flex; gap: 12px; align-items: flex-start; font-size: 0.875rem; }
+.consent input { flex: none; width: 22px; height: 22px; margin: 0; accent-color: var(--color-ink); }
+.connection__submit { background: var(--color-on-dark); color: var(--color-brand); border-color: var(--color-on-dark); }
+.connection__submit:hover { background: transparent; color: var(--color-on-dark); }
+.connection__notice { padding: 12px 16px; background: var(--color-ink); border-radius: 4px; }
 
-.connection__left{
-    width: 800px;
+@media (max-width: 860px) {
+  .connection__grid { grid-template-columns: minmax(0, 1fr); }
 }
-
-.connection__left h4{
-    font-size: 70px ;
-    font-weight: 700;
-    margin-bottom: 100px;
-    margin-top: 100px;
+@media (max-width: 480px) {
+  .field-row { grid-template-columns: minmax(0, 1fr); }
 }
-
-.text__left p{
-    font-size: 24px;
-}
-.check{
-    display: flex;
-    margin-top: 100px; 
-    width: 250px;
-    margin-right: 100px;
-}
-.check__container{
-    display: flex;
-}
-
-.text__check{
-    padding-left: 20px;
-}
-
-.connection__right{
-    background:
-    linear-gradient(-135deg, transparent 35px, #0e9e30e8 0) top right;
-    background-repeat: no-repeat;
-    width: 35%;
-    height: 95%;
-    padding-top: 80px;
-    margin-left: 10% ; 
-    margin-bottom: 80px; 
-}
-.application{
-    padding-left: 40px;
-}
-
-.connection__right p{
-
-margin: 10px;
-}
-
-.application input{
-width: 550px;
-height: 50px;
-}
-
-.connect{
-    padding-top: 30px;
-    display: flex;
-}
-
-.connect input{
-    height: 50px;
-    width: 233px;
-    padding-left: 20px;
-}
-
-.connect{
-    padding-left: 40px;
-}
-
-.email{
-    padding-left: 40px;
-}
-
-.reason{
-    padding-top: 30px;
-    padding-left: 40px;
-}
-
-.reason select{
-    width: 560px;
-    height: 60px;
-}
-
-.comments {
-    padding-top: 30px;
-    padding-left: 40px;
-}
-
-.comments textarea {
-    width: 560px;
-    height: 100px;
-    font-size: 16px;
-    resize: none;
-}
-
-.approval{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-    color: aliceblue;
-    font-size: 14px;
-}
-
-   input[type="checkbox"] {
-    visibility: hidden; 
-    position: absolute;
-  } 
-  
-  input[type="checkbox"] + label::before {
-    content: ''; 
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url(../assets/Vector\ 4.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: 1px solid;
-    cursor: pointer;
-  }
-  
-  input[type="checkbox"]:checked + label::before {
-    background: #0e9e30e8; 
-    border: 1px solid;
-  }  
-
-  .connection__btn{
-    margin-left: 40px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    border: 1px solid;
-    padding-top: 33px;
-    padding-left: 45px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-  }
-
- 
-  
